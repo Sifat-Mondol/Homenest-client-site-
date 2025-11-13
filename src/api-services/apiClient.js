@@ -4,7 +4,7 @@ import Swal from "sweetalert2";
 
 // Base API URL from Vite env
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://homenest-server-site.vercel.app/api",
   headers: {
     "Content-Type": "application/json",
   },
@@ -63,5 +63,5 @@ const ratingsAPI = {
   delete: (id) => api.delete(`/ratings/${id}`),
 };
 
-export { propertiesAPI, ratingsAPI };
-export default api;
+ export { propertiesAPI, ratingsAPI };
+ export default api;
